@@ -1,3 +1,26 @@
+export const weatherOptions = [
+  {
+    day: true,
+    condition: "clear",
+    url: new URL("../assets/day/clear.svg", import.meta.url).href,
+  },
+  {
+    day: true,
+    condition: "cloudy",
+    url: new URL("../assets/day/cloudy.svg", import.meta.url).href,
+  },
+  {
+    day: false,
+    condition: "clear-night",
+    url: new URL("../assets/night/clear-night.svg", import.meta.url).href,
+  },
+  {
+    day: false,
+    condition: "cloudy-night",
+    url: new URL("../assets/night/cloudy-night.svg", import.meta.url).href,
+  },
+];
+
 export const defaultClothingItems = [
   {
     _id: 0,
