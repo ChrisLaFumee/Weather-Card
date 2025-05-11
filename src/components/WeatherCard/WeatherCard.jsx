@@ -9,7 +9,12 @@ function WeatherCard({ weatherData }) {
     );
   });
 
-  const weatherOptionUrl = filteredOptions[0]?.url;
+  let weatherOptionUrl;
+if(filteredOptions.length === 0){
+  weatherOptionUrl = // the defaultWeatherOption.url
+} else {
+  weatherOptionUrl = filteredOptions[0].url;
+}
 
   return (
     <section className="weather-card">
