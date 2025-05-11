@@ -10,6 +10,16 @@ export const weatherOptions = [
     url: new URL("../assets/day/cloudy.svg", import.meta.url).href,
   },
   {
+    day: true,
+    condition: "rain",
+    url: new URL("../assets/day/rain.svg", import.meta.url).href,
+  },
+  {
+    day: true,
+    condition: "snow",
+    url: new URL("../assets/day/snow.svg", import.meta.url).href,
+  },
+  {
     day: false,
     condition: "clear-night",
     url: new URL("../assets/night/clear-night.svg", import.meta.url).href,
@@ -18,6 +28,16 @@ export const weatherOptions = [
     day: false,
     condition: "cloudy-night",
     url: new URL("../assets/night/cloudy-night.svg", import.meta.url).href,
+  },
+  {
+    day: false,
+    condition: "rain-night",
+    url: new URL("../assets/night/rain-night.svg", import.meta.url).href,
+  },
+  {
+    day: false,
+    condition: "snow-night",
+    url: new URL("../assets/night/snow-night.svg", import.meta.url).href,
   },
 ];
 
