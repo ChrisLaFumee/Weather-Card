@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1358px;
+  top: 1040px;
+  left: 40px;
+  margin: 85px auto;
+  color: rgba(0, 0, 0, 1);
+  height: 20px;
+}
