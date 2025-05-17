@@ -9,6 +9,8 @@ import ItemModal from "../ItemModal/ItemModal";
 import { getWeather, filterWeatherData } from "../../utils/weatherApi";
 import Footer from "../Footer/Footer";
 
+import { defaultClothingItems } from "../../utils/constants";
+
 function App() {
   const [weatherData, setWeatherData] = useState({
     type: "",
@@ -18,6 +20,8 @@ function App() {
 
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
+
+  const [clothingItems, setClothingItems] = useState(defaultClothingItems);
 
   const handleCardClick = (card) => {
     setActiveModal("preview");
@@ -45,12 +49,16 @@ function App() {
     <div className="page">
       <div className="page__content">
         <Header handleAddClick={handleAddClick} weatherData={weatherData} />
-        <Main weatherData={weatherData} handleCardClick={handleCardClick} />
+        <Main
+          weatherData={weatherData}
+          handleCardClick={handleCardClick}
+          clothingItems={clothingItems}
+        />
       </div>
       <ModalWithForm
         title="New garment"
         buttonText="Add garment"
-        activeModal={activeModal}
+        isOpen={activeModal === "add-garment"}
         onClose={closeActiveModal}
       >
         <label htmlFor="name" className="modal__label">
@@ -77,6 +85,9 @@ function App() {
           <legend className="modal__legend">Select the weather type:</legend>
           <label
             id="hot"
+            type="radio"
+            name="weatherType"
+            value="hot"
             htmlFor="hot"
             className="modal__label modal__label_type_radio"
           >
@@ -84,6 +95,9 @@ function App() {
           </label>
           <label
             id="warm"
+            type="radio"
+            name="weatherType"
+            value="warm"
             htmlFor="warm"
             className="modal__label modal__label_type_radio"
           >
@@ -91,6 +105,9 @@ function App() {
           </label>
           <label
             id="cold"
+            type="radio"
+            name="weatherType"
+            value="cold"
             htmlFor="cold"
             className="modal__label modal__label_type_radio"
           >
