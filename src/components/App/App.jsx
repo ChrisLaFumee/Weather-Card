@@ -83,35 +83,35 @@ function App() {
         </label>
         <fieldset className="modal__radio-buttons">
           <legend className="modal__legend">Select the weather type:</legend>
-          <label
-            id="hot"
-            type="radio"
-            name="weatherType"
-            value="hot"
-            htmlFor="hot"
-            className="modal__label modal__label_type_radio"
-          >
-            <input type="radio" className="modal__radio-input" /> Hot
+          <label className="modal__label modal__label_type_radio">
+            <input
+              type="radio"
+              className="modal__radio-input"
+              id="hot"
+              name="weatherType"
+              value="hot"
+            />
+            Hot
           </label>
-          <label
-            id="warm"
-            type="radio"
-            name="weatherType"
-            value="warm"
-            htmlFor="warm"
-            className="modal__label modal__label_type_radio"
-          >
-            <input type="radio" className="modal__radio-input" /> Warm
+          <label className="modal__label modal__label_type_radio">
+            <input
+              type="radio"
+              className="modal__radio-input"
+              id="warm"
+              name="weatherType"
+              value="warm"
+            />
+            Warm
           </label>
-          <label
-            id="cold"
-            type="radio"
-            name="weatherType"
-            value="cold"
-            htmlFor="cold"
-            className="modal__label modal__label_type_radio"
-          >
-            <input type="radio" className="modal__radio-input" /> Cold
+          <label className="modal__label modal__label_type_radio">
+            <input
+              type="radio"
+              className="modal__radio-input"
+              id="cold"
+              name="weatherType"
+              value="cold"
+            />
+            Cold
           </label>
         </fieldset>
       </ModalWithForm>
