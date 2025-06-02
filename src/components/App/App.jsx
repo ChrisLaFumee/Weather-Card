@@ -10,6 +10,7 @@ import { getWeather, filterWeatherData } from "../../utils/weatherApi";
 import Footer from "../Footer/Footer";
 
 import { defaultClothingItems } from "../../utils/constants";
+import CurrentTemperatureUnitContext from "../../contexts/CurrentTemperatureUnit";
 
 function App() {
   const [weatherData, setWeatherData] = useState({
@@ -20,8 +21,12 @@ function App() {
 
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
-
+  const [currentTemperatureUnit, setcurrentTemperatureUnit] = useState("F");
   const [clothingItems, setClothingItems] = useState(defaultClothingItems);
+
+  const handleToggleSwitchChange = () => {
+    setcurrentTemperatureUnit(currentTemperatureUnit === "F" ? "C" : "F");
+  };
 
   const handleCardClick = (card) => {
     setActiveModal("preview");
@@ -46,7 +51,9 @@ function App() {
   }, []);
 
   return (
-    <div className="page">
+    <CurrentTemperatureUnitContext.Provider
+      value={{ currentTemperatureUnit, handleToggleSwitchChange }}
+    >
       <div className="page__content">
         <Header handleAddClick={handleAddClick} weatherData={weatherData} />
         <Main
@@ -54,6 +61,7 @@ function App() {
           handleCardClick={handleCardClick}
           clothingItems={clothingItems}
         />
+        <Footer />
       </div>
       <ModalWithForm
         title="New garment"
@@ -120,8 +128,7 @@ function App() {
         card={selectedCard}
         onClose={closeActiveModal}
       />
-      <Footer />
-    </div>
+    </CurrentTemperatureUnitContext.Provider>
   );
 }
 
