@@ -8,6 +8,7 @@ export default function ToggleSwitch() {
   );
   return (
     <label className="toggle-switch">
+      <span className={currentTemperatureUnit === "F" ? "active" : ""}></span>
       <input
         onChange={handleToggleSwitchChange}
         type="checkbox"
