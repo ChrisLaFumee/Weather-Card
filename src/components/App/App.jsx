@@ -78,7 +78,11 @@ function App() {
           <Route
             path="/"
             element={
-              <Main weatherData={weatherData} onCardClick={handleCardClick} />
+              <Main
+                weatherData={weatherData}
+                onCardClick={handleCardClick}
+                clothingItems={clothingItems}
+              />
             }
           />
           <Route
