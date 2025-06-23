@@ -15,8 +15,8 @@ export const filterWeatherData = (data) => {
   const result = {};
   result.city = data.name;
   result.temp = {
-    F: data.main.temp,
-    C: ((data.main.temp - 32) * (5 / 9)).toFixed(2),
+    F: data.main.temp.toFixed(1),
+    C: ((data.main.temp - 32) * (5 / 9)).toFixed(1),
   };
   result.type = getWeatherType(result.temp.F);
   result.condition = data.weather[0].main.toLowerCase();
