@@ -68,6 +68,16 @@ function App() {
       .catch(console.error);
   }, []);
 
+  const handleDeleteItem = (itemToDelete) => {
+    setClothingItems((prevItems) =>
+      prevItems.filter(
+        (item) =>
+          (item._id || item.name) !== (itemToDelete._id || itemToDelete.name)
+      )
+    );
+    setActiveModal("");
+  };
+
   return (
     <CurrentTemperatureUnitContext.Provider
       value={{ currentTemperatureUnit, handleToggleSwitchChange }}
@@ -91,6 +101,7 @@ function App() {
               <Profile
                 onCardClick={handleCardClick}
                 clothingItems={clothingItems}
+                onAddClick={handleAddClick}
               />
             }
           />
@@ -107,6 +118,7 @@ function App() {
         activeModal={activeModal}
         card={selectedCard}
         onClose={closeActiveModal}
+        onDeleteItem={handleDeleteItem}
       />
     </CurrentTemperatureUnitContext.Provider>
   );
