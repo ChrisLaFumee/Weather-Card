@@ -101,6 +101,42 @@
       "name": "T-Shirt",
       "weather": "hot",
       "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/T-Shirt.png?etag=44ed1963c44ab19cd2f5011522c5fc09"
+    },
+    {
+      "name": "sandals",
+      "imageUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wired.com%2Fstory%2Fbring-back-cargo-pants%2F&psig=AOvVaw1XedHlrkbRmC61f76jjHdC&ust=1749154713261000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiCqZvL2I0DFQAAAAAdAAAAABAE",
+      "weather": "hot",
+      "_id": 17
+    },
+    {
+      "name": "sandals",
+      "imageUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/744a31f9-5e8b-4550-aa91-a260d23d61e4/NIKE+CALM+SLIDE.png",
+      "weather": "hot",
+      "_id": 18
+    },
+    {
+      "name": "sandals",
+      "imageUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/744a31f9-5e8b-4550-aa91-a260d23d61e4/NIKE+CALM+SLIDE.png",
+      "weather": "hot",
+      "_id": 19
+    },
+    {
+      "name": "sandals",
+      "imageUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/744a31f9-5e8b-4550-aa91-a260d23d61e4/NIKE+CALM+SLIDE.png",
+      "weather": "hot",
+      "_id": 20
+    },
+    {
+      "name": "sandals",
+      "imageUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/744a31f9-5e8b-4550-aa91-a260d23d61e4/NIKE+CALM+SLIDE.png",
+      "weather": "hot",
+      "_id": 21
+    },
+    {
+      "name": "sandals",
+      "imageUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/744a31f9-5e8b-4550-aa91-a260d23d61e4/NIKE+CALM+SLIDE.png",
+      "weather": "hot",
+      "_id": 22
     }
   ]
 }
