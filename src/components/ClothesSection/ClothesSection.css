@@ -1,0 +1,19 @@
+.clothes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.clothes-section__add {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.clothes-section__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
