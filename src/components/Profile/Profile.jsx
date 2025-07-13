@@ -6,6 +6,7 @@ function Profile({ onCardClick, clothingItems, onAddClick }) {
   return (
     <div className="profile">
       <section className="profile__sidebar">
+        <div className="profile__sidebar-content"></div>
         <SideBar />
       </section>
       <section className="profile__clothing-items">

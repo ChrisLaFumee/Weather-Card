@@ -1,0 +1,21 @@
+.profile {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile__sidebar {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  margin-right: 116px;
+}
+
+.profile__sidebar-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile__clothing-items {
+  flex: 1;
+}
